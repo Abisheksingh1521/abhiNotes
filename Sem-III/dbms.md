@@ -1,8 +1,8 @@
-#DBMS
+# DBMS
 
-##LEETCODE
-###1587
-###Table: Users
+## LEETCODE
+### 1587
+### Table: Users
 
 +--------------+---------+
 | Column Name  | Type    |
