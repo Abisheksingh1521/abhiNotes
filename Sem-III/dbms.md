@@ -153,3 +153,12 @@ from Employee e  LEFT JOIN Bonus b on e.empid=b.empid
 group by e.name having bonus < 1000 or bonus is NULL;
 
 ```
+
+**Fetch all employee names,their dept names ,their manager_names and the project they work for ?? (3 tables join)**
+
+```sql
+select e.emp_name,d.dept_name,m.manager_name,p.project_name
+from[employee e left join department d on e.dept_id=d.dept_id]
+join manager m on e.m_id=m.m_id
+join project p on p.team_member_id=e.emp_id;
+```
