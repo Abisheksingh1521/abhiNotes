@@ -397,5 +397,39 @@ int main()
 	area(11,10,6);
 }
 ```
+**AREA**
+```cpp
+#include<iostream>
+#include<string>
+using namespace std;
+class rectangle{
+	int length;
+	int breadth;
+	int area;	
+public:
+	void read_length_breadth()
+	{
+		cout<<"enter length and breadth";
+		cin>> length >> breadth;
+	}
+	int areass(){
+	area=length * breadth;
+	return area;
+}
+	void display();
+	
+};
 
-
+void rectangle::display(){
+	cout<<"length :"<<length<<endl;
+	cout<<"breadth :"<<breadth<<endl;
+	cout<<"area :"<<areass();
+}
+int main()
+{
+	rectangle r1;
+	r1.read_length_breadth();
+	cout<<"AREA IS"<<endl;
+	r1.display();
+}
+```
