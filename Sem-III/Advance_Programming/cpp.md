@@ -433,3 +433,33 @@ int main()
 	r1.display();
 }
 ```
+
+## STATIC DATA MEMBER EXAMPLE:
+```cpp
+
+#include<iostream>
+using namespace std;
+class demo{
+	int x;
+	int y;
+	static int z;
+	public:
+		void getdata(){
+			cout<<"enter two values";
+			cin>>x>>y;
+			z++;
+		}
+		void display(){
+			cout<<"x="<<x<<"\t y="<<y<<" \tz="<<z<<endl;
+		}
+};
+int demo::z;
+int main(){
+	demo aa,bb;
+	aa.getdata();
+	bb.getdata();
+	aa.display();
+	bb.display();
+	
+}
+```
