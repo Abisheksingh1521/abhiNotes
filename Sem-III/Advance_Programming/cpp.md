@@ -463,3 +463,40 @@ int main(){
 	
 }
 ```
+
+## STATIC DATA FUNCTION EXAMPLE:
+
+
+```cpp
+
+#include<iostream>
+using namespace std;
+class demo{
+	int x;
+	static int y;
+	public:
+		void getdata(){
+			cout<<"enter x:"<<endl;
+			cin>>x;
+			y++;
+		}
+		void display(){
+			cout<<"x = "<<x<<endl;
+			cout<<"y = "<<y<<endl;
+		}
+		static void myfun(){
+			cout<<"Y is static"<<endl;
+			
+			cout<<"y ="<<y;
+		}
+};
+int demo::y;
+int main(){
+	demo aa,bb;
+	aa.getdata();
+	aa.display();
+	bb.getdata();
+	bb.display();
+	demo::myfun();
+}
+```
